@@ -583,7 +583,8 @@ map.on('load', function () {
         type: 'line',
         source: 'school-districts-nyc-simplified',
         paint: {
-            'line-width': 2
+            'line-dasharray': [1, 1],
+            'line-width': 3
 
         }
     })
