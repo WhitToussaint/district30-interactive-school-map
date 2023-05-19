@@ -1,2 +1,2 @@
-# final-project-map
+I currently serve on the Community Education Council for District 30 in Queens. We currently do not have an interactive map of schools for our council and I really wanted to build one that would be useful to us and parents in the district. This map shows the location of the schools in our district and the popups also show the user the school's exterior. The goal for this tool is to share information about the school including contact information, current Principal, current CEC Liaison, and City Council District. Providing this information gives the council and parents the information they need to contact decision makers at the school, district, and city levels so that they can advocate for their school communities.
  
