@@ -584,6 +584,7 @@ map.on('load', function () {
         source: 'school-districts-nyc-simplified',
         paint: {
             'line-width': 2,
+            'line-color': '#525050'
            
         }
     })
