@@ -467,7 +467,7 @@ const schools = [
         "telephone-number": "718-335-7648",
         "cec-liaison": "Victoria Medelius",
         "city-council-district": "District 25",
-        "image":"is230.jpeg"
+        "image": "is230.jpeg"
     },
     {
         "school-name": "I.S. 235",
@@ -583,9 +583,8 @@ map.on('load', function () {
         type: 'line',
         source: 'school-districts-nyc-simplified',
         paint: {
-            'line-dasharray': [1, 1],
-            'line-width': 3
-
+            'line-width': 2,
+           
         }
     })
 })
@@ -615,32 +614,32 @@ for (const school of schools) {
     link.className = 'title';
     link.id = `link-${school.id}`;
     link.innerHTML = `<div>${school["school-name"]}</div><div> ${school.address}</div>`;
-   
 
 
-      /* Add details to the individual listing. */
-      const details = listing.appendChild(document.createElement('div'));
-      details.innerHTML = `<div>Grades: ${school["grades"]}</div>
+
+    /* Add details to the individual listing. */
+    const details = listing.appendChild(document.createElement('div'));
+    details.innerHTML = `<div>Grades: ${school["grades"]}</div>
                            <div>Principal: ${school["principal"]}</div>
                            <div>Telephone Number: ${school["telephone-number"]}</div>
                            <div>CEC Liaison: ${school["cec-liaison"]}</div>
                            <div>City Council District: ${school["city-council-district"]}</div>`;
-    
+
 }
 
 function flyToSchool(current) {
     map.flyTo({
-      center: current.coordinates,
-      zoom: 15
+        center: current.coordinates,
+        zoom: 15
     });
-  }
-  function createPopUp(current) {
+}
+function createPopUp(current) {
     const popUps = document.getElementsByClassName('mapboxgl-popup');
     /** Check if there is already a popup on the map and if so, remove it */
     if (popUps[0]) popUps[0].remove();
-  
-    const listing= new mapboxgl.Popup({ closeOnClick: false })
-      .setLngLat([school.longitude, school.latitude])
-      .setHTML(`<div>${school['school-name']}</div><div><img src="img/${school.image}"/></div>`)
-      .addTo(map);
-  }
+
+    const listing = new mapboxgl.Popup({ closeOnClick: false })
+        .setLngLat([school.longitude, school.latitude])
+        .setHTML(`<div>${school['school-name']}</div><div><img src="img/${school.image}"/></div>`)
+        .addTo(map);
+}
