@@ -621,10 +621,10 @@ for (const school of schools) {
     /* Add details to the individual listing. */
     const details = listing.appendChild(document.createElement('div'));
     details.innerHTML = `<div>Grades: ${school["grades"]}</div>
-                           <div>Principal: ${school["principal"]}</div>
-                           <div>Telephone Number: ${school["telephone-number"]}</div>
-                           <div>CEC Liaison: ${school["cec-liaison"]}</div>
-                           <div>City Council District: ${school["city-council-district"]}</div>`;
+                         <div>Principal: ${school["principal"]}</div>
+                         <div>Telephone Number: ${school["telephone-number"]}</div>
+                         <div>CEC Liaison: ${school["cec-liaison"]}</div>
+                         <div>City Council District: ${school["city-council-district"]}</div>`;
 
 }
 
@@ -634,7 +634,7 @@ function flyToSchool(current) {
         zoom: 15
     });
 }
-    const listing = new mapboxgl.Popup({ closeOnClick: false })
-        .setLngLat([school.longitude, school.latitude])
-        .setHTML(`<div>${school['school-name']}</div><div><img src="img/${school.image}"/></div>`)
-        .addTo(map);
+// const listing = new mapboxgl.Popup({ closeOnClick: false })
+//     .setLngLat([schools.longitude, schools.latitude])
+//     .setHTML(`<div>${schools['school-name']}</div><div><img src="img/${schools.image}"/></div>`)
+//     .addTo(map);
