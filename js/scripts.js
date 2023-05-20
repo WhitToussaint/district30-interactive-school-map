@@ -588,6 +588,17 @@ map.on('load', function () {
 
         }
     })
+
+    // map.addLayer({
+    //     id: 'fill-school-districts-nyc-simplified',
+    //     type: 'fill',
+    //     source: 'school-districts-nyc-simplified',
+    //     paint: {
+    //         'fill-color':'#e1fa70',
+    //         'rgba':(0.5)
+
+    //     }
+    // })
 })
 
 /**
@@ -609,6 +620,7 @@ for (const school of schools) {
     /* Assign the `item` class to each listing for styling. */
     listing.className = 'item';
 
+
     /* Add the link to the individual listing created above. */
     const link = listing.appendChild(document.createElement('a'));
     link.href = '#';
@@ -626,14 +638,30 @@ for (const school of schools) {
                          <div>CEC Liaison: ${school["cec-liaison"]}</div>
                          <div>City Council District: ${school["city-council-district"]}</div>`;
 
+    link.addEventListener('click', function () {
+        console.log('click',this.id)
+        for (const school of schools) {
+            if (this.id === `link-${school.id}`) {
+                flyToSchool(school);
+                // createPopUp(feature);
+            }
+        }
+        const activeItem = document.getElementsByClassName('active');
+        if (activeItem[0]) {
+            activeItem[0].classList.remove('active');
+        }
+        this.parentNode.classList.add('active');
+    });
 }
 
 function flyToSchool(current) {
+
     map.flyTo({
-        center: current.coordinates,
+        center: [current.longitude,current.latitude],
         zoom: 15
     });
 }
+
 // const listing = new mapboxgl.Popup({ closeOnClick: false })
 //     .setLngLat([schools.longitude, schools.latitude])
 //     .setHTML(`<div>${schools['school-name']}</div><div><img src="img/${schools.image}"/></div>`)
