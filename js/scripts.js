@@ -585,7 +585,7 @@ map.on('load', function () {
         paint: {
             'line-width': 2,
             'line-color': '#525050'
-           
+
         }
     })
 })
@@ -634,13 +634,7 @@ function flyToSchool(current) {
         zoom: 15
     });
 }
-function createPopUp(current) {
-    const popUps = document.getElementsByClassName('mapboxgl-popup');
-    /** Check if there is already a popup on the map and if so, remove it */
-    if (popUps[0]) popUps[0].remove();
-
     const listing = new mapboxgl.Popup({ closeOnClick: false })
         .setLngLat([school.longitude, school.latitude])
         .setHTML(`<div>${school['school-name']}</div><div><img src="img/${school.image}"/></div>`)
         .addTo(map);
-}
