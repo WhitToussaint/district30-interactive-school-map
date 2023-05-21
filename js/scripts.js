@@ -557,7 +557,7 @@ const schools = [
 // popup markers  
 schools.forEach(function (school) {
     // create the popup
-    const popup = new mapboxgl.Popup({ offset: 20 })
+    const popup = new mapboxgl.Popup({ closeOnClick: true })
         .setHTML(
             `
     <div>
@@ -671,7 +671,7 @@ function flyToSchool(current) {
     popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat([current.longitude, current.latitude])
         .setHTML(`<div>${current['school-name']}</div>
-            <div><img src="img/${current.image}"/></div>`)
+            <div><img src="img/${current.image}"/></div><div>'<div class="popup-directions-btn">Get Directions</div>'`)
         .addTo(map);
 }
 // Open the popup after the fly animation is completed
@@ -679,6 +679,12 @@ map.once('moveend', function () {
     popup.addTo(map);
 });
 
+ // Handle directions button click event
+ $(document).on('click', '.popup-directions-btn', function() {
+    var destination = current.latitude + ',' + current.longitude;
+    var directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(destination);
+    window.open(directionsUrl, '_blank');
+});
 
 
 

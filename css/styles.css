@@ -168,3 +168,10 @@ a:hover {
   justify-content: center;
 }
 
+.popup-directions-btn {
+  width: 100px;
+  height: auto;
+  justify-content: center;
+}
+
+
