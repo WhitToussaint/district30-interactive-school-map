@@ -679,7 +679,7 @@ map.once('moveend', function () {
     popup.addTo(map);
 });
 
-// Reset the map view to the initial bounds when the popup is closed
+
 
 
 
