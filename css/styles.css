@@ -121,7 +121,7 @@ a:hover {
 }
 
 .mapboxgl-popup-close-button {
-  display: none;
+  display: inline-block;
 }
 
 .mapboxgl-popup-content {

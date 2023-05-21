@@ -654,19 +654,19 @@ function flyToSchool(current) {
         zoom: 15
     });
 
-    schools.forEach(function (school) {
-        // Create a new popup
-         popup = new mapboxgl.Popup({ closeOnClick: false })
-            .setLngLat([current.longitude, current.latitude])
-            .setHTML(`<div>${school['school-name']}</div>
-            <div><img src="img/${school.image}"/></div>`)
-            .addTo(map);
-    })
-    // Open the popup after the fly animation is completed
-    map.once('moveend', function () {
-        popup.addTo(map);
-    });
+
+    // Create a new popup
+    popup = new mapboxgl.Popup({ closeButton: true })
+        .setLngLat([current.longitude, current.latitude])
+        .setHTML(`<div>${current['school-name']}</div>
+            <div><img src="img/${current.image}"/></div>`)
+        .addTo(map);
 }
+// Open the popup after the fly animation is completed
+map.once('moveend', function () {
+    popup.addTo(map);
+});
+
 
 
 
