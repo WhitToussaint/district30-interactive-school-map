@@ -29,7 +29,7 @@ const schools = [
         "school-name": "P.S. 017",
         "address": "28-37 29th Street, Long Island City, NY 11102",
         "longitude": -73.9231391566169,
-        "latitude": 40.768045696664075, 
+        "latitude": 40.768045696664075,
         "grades": "PK - 5",
         "principal": "Rebecca Heyward",
         "telephone-number": "718-278-1220",
@@ -65,7 +65,7 @@ const schools = [
         "school-name": "P.S. 076",
         "address": "36-36 10th Street, Astoria, NY 11106",
         "longitude": -73.94181771491378,
-        "latitude": 40.760722505900056, 
+        "latitude": 40.760722505900056,
         "grades": "3K - 5",
         "principal": "Timothy Miller",
         "telephone-number": "718-361-7464",
@@ -89,7 +89,7 @@ const schools = [
         "school-name": "P.S./I.S. 078 ECC Building",
         "address": "48-09 Center Blvd, Long Island City, NY 11109",
         "longitude": -73.95774259392498,
-        "latitude": 40.744303626185165, 
+        "latitude": 40.744303626185165,
         "grades": "PK - 1",
         "principal": "Louis Pavone",
         "telephone-number": "718-392-5402",
@@ -101,7 +101,7 @@ const schools = [
         "school-name": "P.S. 084",
         "address": "22-45 41st Street, Astoria, NY 11105",
         "longitude": -73.90613157345048,
-        "latitude": 40.77116974069203, 
+        "latitude": 40.77116974069203,
         "grades": "PK - 5",
         "principal": "Dominic Armano",
         "telephone-number": "718-278-1915",
@@ -185,7 +185,7 @@ const schools = [
         "school-name": "P.S. 148",
         "address": "89-02 32nd Avenue, East Elmhurst, NY 11369",
         "longitude": -73.87875488264245,
-        "latitude": 40.75816257946581, 
+        "latitude": 40.75816257946581,
         "grades": "PK - 5 ",
         "principal": "Yolanda Harvey",
         "telephone-number": "718-898-8181",
@@ -209,7 +209,7 @@ const schools = [
         "school-name": "P.S. 150",
         "address": "40-01 43rd Avenue, Long Island City, NY 11104",
         "longitude": -73.9234070117597,
-        "latitude": 40.745788240278685, 
+        "latitude": 40.745788240278685,
         "grades": "PK - 5 ",
         "principal": "Carmen Parache",
         "telephone-number": "718-784-2252",
@@ -293,7 +293,7 @@ const schools = [
         "school-name": "P.S. 228",
         "address": "32-65 93rd Street, East Elmhurst, NY 11369",
         "longitude": -73.87491868851194,
-        "latitude": 40.756974330829394, 
+        "latitude": 40.756974330829394,
         "grades": "PK - 2 ",
         "principal": "Olga Guzman",
         "telephone-number": "718-889-5799",
@@ -304,8 +304,8 @@ const schools = [
     {
         "school-name": "P.S. 234",
         "address": "30-15 29th Street, Astoria, NY 11102",
-        "longitude":  -73.92319979181121,
-        "latitude": 40.76693110634071, 
+        "longitude": -73.92319979181121,
+        "latitude": 40.76693110634071,
         "grades": "PK - 5",
         "principal": "Dora Danner",
         "telephone-number": "718-956-2760",
@@ -317,7 +317,7 @@ const schools = [
         "school-name": "P.S. 280",
         "address": "34-20 94th Street, Jackson Heights, NY 11372",
         "longitude": -73.87385390703365,
-        "latitude": 40.75382267485293, 
+        "latitude": 40.75382267485293,
         "grades": "K - 5",
         "principal": "Dr. Milagros Dueno, I.A.",
         "telephone-number": "718-424-9031",
@@ -353,7 +353,7 @@ const schools = [
         "school-name": "P.S./I.S. 300 Upper Division",
         "address": "31-51 21st Street, Astoria, NY 11106",
         "longitude": -73.92996352098918,
-        "latitude": 40.76605309899242, 
+        "latitude": 40.76605309899242,
         "grades": "5 - 8",
         "principal": "Sonita Ramkishun",
         "telephone-number": "718-726-0501",
@@ -365,7 +365,7 @@ const schools = [
         "school-name": "P.S. 361",
         "address": "39-07 57th Street, Woodside, NY 11377",
         "longitude": -73.90574519006371,
-        "latitude": 40.747813446254, 
+        "latitude": 40.747813446254,
         "grades": "PK - 5",
         "principal": "Dr. Nayeon Naomi Hwang",
         "telephone-number": "718-592-3300",
@@ -449,7 +449,7 @@ const schools = [
         "school-name": "I.S. 204",
         "address": "36-41 28th Street, Astoria, NY 11106",
         "longitude": -73.93253850576825,
-        "latitude": 40.75691467986326, 
+        "latitude": 40.75691467986326,
         "grades": "6-8",
         "principal": "Faye Erstejn-Kotzer",
         "telephone-number": "718-937-1463",
@@ -485,7 +485,7 @@ const schools = [
         "school-name": "I.S. 235",
         "address": "30-14 30th Street, Astoria, NY  11102",
         "longitude": -73.92334171437707,
-        "latitude": 40.767095695290756, 
+        "latitude": 40.767095695290756,
         "grades": "6-8",
         "principal": "Lisa Lin",
         "telephone-number": "718-956-4140",
@@ -497,7 +497,7 @@ const schools = [
         "school-name": "I.S. 291",
         "address": "1-50 51st Avenue, Long Island City, NY 11101",
         "longitude": -73.95955143845103,
-        "latitude": 40.74283141065672, 
+        "latitude": 40.74283141065672,
         "grades": "6-8",
         "principal": "Sarah Goodman",
         "telephone-number": "718-609-3300",
@@ -545,7 +545,7 @@ const schools = [
         "school-name": "D30 PK 397",
         "address": "32-52 37th Street, Astoria, NY 11103",
         "longitude": -73.92166289886393,
-        "latitude": 40.75881060312826, 
+        "latitude": 40.75881060312826,
         "grades": "PK",
         "principal": "Dr. Suzan Goldstein",
         "telephone-number": "718-316-9337",
@@ -557,16 +557,16 @@ const schools = [
 // popup markers  
 schools.forEach(function (school) {
     // create the popup
-    const popup = new mapboxgl.Popup({ offset: 30 })
-    .setHTML(
-    `
+    const popup = new mapboxgl.Popup({ offset: 20 })
+        .setHTML(
+            `
     <div>
         <div>${school['school-name']}</div>
         <img src="img/${school.image}"/>
     </div>
     `
 
-    );
+        );
 
     // figure out the color of the marker based on the program variable
 
@@ -645,7 +645,7 @@ for (const school of schools) {
 
     link.addEventListener('click', function () {
         console.log('click', this.id)
-        for (const school of schools) {
+        {
             if (this.id === `link-${school.id}`) {
                 flyToSchool(school);
                 // createPopup(marker);
@@ -668,7 +668,7 @@ function flyToSchool(current) {
 
 
     // Create a new popup
-    popup = new mapboxgl.Popup({ closeButton: true })
+    popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat([current.longitude, current.latitude])
         .setHTML(`<div>${current['school-name']}</div>
             <div><img src="img/${current.image}"/></div>`)
