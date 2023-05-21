@@ -127,7 +127,7 @@ a:hover {
 .mapboxgl-popup-content {
   font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
   padding: 0;
-  width: 180px;
+  width: auto;
   justify-content: center;
 }
 

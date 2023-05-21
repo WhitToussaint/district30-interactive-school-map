@@ -40,8 +40,8 @@ const schools = [
     {
         "school-name": "P.S. 069",
         "address": "77-02 37th Avenue, Jackson Heights, NY 11372",
-        "longitude": -73.88850545,
-        "latitude": 40.74902329,
+        "longitude": -73.88851341214192,
+        "latitude": 40.74901123174726,
         "grades": "PK - 5",
         "principal": "Nicole Ciorciari, I.A.",
         "telephone-number": "718-424-7700",
@@ -112,8 +112,8 @@ const schools = [
     {
         "school-name": "P.S. 092",
         "address": "99-01 34th Avenue, Corona, NY 11368",
-        "longitude": -73.86897743,
-        "latitude": 40.75736848,
+        "longitude": -73.86892378853085,
+        "latitude": 40.756011256026476,
         "grades": "PK - 5",
         "principal": "Daisy Morales",
         "telephone-number": "718-533-1013",
@@ -220,8 +220,8 @@ const schools = [
     {
         "school-name": "P.S. 152",
         "address": "33-52 62nd Street, Woodside, NY 11377",
-        "longitude": -73.90003727,
-        "latitude": 40.75923004,
+        "longitude": -73.90025961733916,
+        "latitude": 40.75332587147122,
         "grades": "PK - 5",
         "principal": "Lisa Russo, I.A.",
         "telephone-number": "718-429-3141",
@@ -268,8 +268,8 @@ const schools = [
     {
         "school-name": "P.S. 222",
         "address": "86-15 37th Avenue, Jackson Heights, NY 11372",
-        "longitude": -73.8799502,
-        "latitude": 40.75049603,
+        "longitude": -73.87995020171316,
+        "latitude": 40.75051228741588,
         "grades": "PK - 2 ",
         "principal": "Yvonne Marrero",
         "telephone-number": "718-429-2563",
@@ -546,15 +546,15 @@ const schools = [
 schools.forEach(function (school) {
     // create the popup
     const popup = new mapboxgl.Popup({ offset: 30 })
-        .setHTML(
-            `
-            <div>
-                <div>${school['school-name']}</div>
-                <img src="img/${school.image}"/>
-            </div>
-            `
+    // .setHTML(
+    // `
+    // <div>
+    //     <div>${school['school-name']}</div>
+    //     <img src="img/${school.image}"/>
+    // </div>
+    // `
 
-        );
+    // );
 
     // figure out the color of the marker based on the program variable
 
@@ -567,8 +567,9 @@ schools.forEach(function (school) {
         .setLngLat([school.longitude, school.latitude])
         .setPopup(popup)
         .addTo(map);
-})
 
+
+})
 
 
 map.on('load', function () {
@@ -589,16 +590,6 @@ map.on('load', function () {
         }
     })
 
-    // map.addLayer({
-    //     id: 'fill-school-districts-nyc-simplified',
-    //     type: 'fill',
-    //     source: 'school-districts-nyc-simplified',
-    //     paint: {
-    //         'fill-color':'#e1fa70',
-    //         'rgba':(0.5)
-
-    //     }
-    // })
 })
 
 /**
@@ -609,6 +600,8 @@ map.on('load', function () {
 schools.forEach((school, i) => {
     school.id = i;
 });
+
+
 
 
 for (const school of schools) {
@@ -639,11 +632,11 @@ for (const school of schools) {
                          <div>City Council District: ${school["city-council-district"]}</div>`;
 
     link.addEventListener('click', function () {
-        console.log('click',this.id)
+        console.log('click', this.id)
         for (const school of schools) {
             if (this.id === `link-${school.id}`) {
                 flyToSchool(school);
-                // createPopUp(feature);
+                // createPopup(marker);
             }
         }
         const activeItem = document.getElementsByClassName('active');
@@ -657,11 +650,42 @@ for (const school of schools) {
 function flyToSchool(current) {
 
     map.flyTo({
-        center: [current.longitude,current.latitude],
+        center: [current.longitude, current.latitude],
         zoom: 15
+    });
+
+    schools.forEach(function (school) {
+        // Create a new popup
+         popup = new mapboxgl.Popup({ closeOnClick: false })
+            .setLngLat([current.longitude, current.latitude])
+            .setHTML(`<div>${school['school-name']}</div>
+            <div><img src="img/${school.image}"/></div>`)
+            .addTo(map);
+    })
+    // Open the popup after the fly animation is completed
+    map.once('moveend', function () {
+        popup.addTo(map);
     });
 }
 
+
+
+// createElement = new mapboxgl.Popup({ closeOnClick: false })
+//     .setLngLat([schools.longitude, schools.latitude])
+//     .setHTML(`<div>${schools['school-name']}</div><div><img src="img/${schools.image}"/></div>`)
+//     .addTo(map);
+
+
+// const popup = new mapboxgl.Popup({ offset: 30 })
+//         .setHTML(
+//             `
+//             <div>
+//                 <div>${school['school-name']}</div>
+//                 <img src="img/${school.image}"/>
+//             </div>
+//             `
+
+//         );
 // const listing = new mapboxgl.Popup({ closeOnClick: false })
 //     .setLngLat([schools.longitude, schools.latitude])
 //     .setHTML(`<div>${schools['school-name']}</div><div><img src="img/${schools.image}"/></div>`)
