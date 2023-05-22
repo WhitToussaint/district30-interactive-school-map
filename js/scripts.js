@@ -704,24 +704,6 @@ map.once('moveend', function () {
     window.open('https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(destination), '_blank');
 });
 
-const legendItems = [
-    { name: 'Votes 1 - 1000', color: '#edf8fb' },
-    { name: 'Votes 1001 - 3000', color: '#b3cde3' },
-    { name: 'Votes 3001 - 5000', color: '#8c96c6' },
-    { name: 'Votes 5001 - 7000', color: '#8856a7' },
-    { name: 'Votes 7000 - 9000+', color: '#810f7c' }
-];
-
-legendItems.forEach(item => {
-    const legendItem = $('<div>').addClass('legend-item');
-    const legendColor = $('<div>').addClass('legend-color').css('background-color', item.color);
-    const legendText = $('<span>').text(item.name);
-    legendItem.append(legendColor).append(legendText);
-    $('#legend').append(legendItem);
-});
-
-const legendControl = new mapboxgl.Control({ element: $('#legend')[0] });
-map.addControl(legendControl);
 
 
 // createElement = new mapboxgl.Popup({ closeOnClick: false })
