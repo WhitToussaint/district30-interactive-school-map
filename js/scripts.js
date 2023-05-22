@@ -569,6 +569,25 @@ schools.forEach(function (school) {
         );
 
     // figure out the color of the marker based on the program variable
+    if (schools.grades === '3K - PK') {
+        color = '#0fa8f5'
+    }
+
+    if (schools.grades === 'PK') {
+        color = '#1ed94a'
+    }
+
+    if (schools.grades === 'PK - 5') {
+        color = '#f5b00f'
+    }
+
+    if (schools.grades === 'K - 5') {
+        color = '#e356af'
+    }
+
+    if (schools.grades === '6 - 8') {
+        color = '#8751cf'
+    }
 
     // by default, use gray
 
@@ -670,8 +689,8 @@ function flyToSchool(current) {
     // Create a new popup
     popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat([current.longitude, current.latitude])
-        .setHTML(`<div>${current['school-name']}</div>
-            <div><img src="img/${current.image}"/></div><div>'<div class="popup-directions-btn">Get Directions</div>'`)
+        .setHTML(`'<div>${current['school-name']}</div>
+            <div><img src="img/${current.image}"/></div><div>'<div class=popup-directions-btn>Get Directions</div>'`)
         .addTo(map);
 }
 // Open the popup after the fly animation is completed
@@ -680,13 +699,29 @@ map.once('moveend', function () {
 });
 
  // Handle directions button click event
- $(document).on('click', '.popup-directions-btn', function() {
-    var destination = current.latitude + ',' + current.longitude;
-    var directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(destination);
-    window.open(directionsUrl, '_blank');
+ $('#popup-directions-btn').on('click', function() {
+    var destination = (school.latitude + ',' + school.longitude);
+    window.open('https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(destination), '_blank');
 });
 
+const legendItems = [
+    { name: 'Votes 1 - 1000', color: '#edf8fb' },
+    { name: 'Votes 1001 - 3000', color: '#b3cde3' },
+    { name: 'Votes 3001 - 5000', color: '#8c96c6' },
+    { name: 'Votes 5001 - 7000', color: '#8856a7' },
+    { name: 'Votes 7000 - 9000+', color: '#810f7c' }
+];
 
+legendItems.forEach(item => {
+    const legendItem = $('<div>').addClass('legend-item');
+    const legendColor = $('<div>').addClass('legend-color').css('background-color', item.color);
+    const legendText = $('<span>').text(item.name);
+    legendItem.append(legendColor).append(legendText);
+    $('#legend').append(legendItem);
+});
+
+const legendControl = new mapboxgl.Control({ element: $('#legend')[0] });
+map.addControl(legendControl);
 
 
 // createElement = new mapboxgl.Popup({ closeOnClick: false })

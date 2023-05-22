@@ -82,14 +82,14 @@
       <h1> <i class="fa-solid fa-school">&nbsp;&nbsp;</i>3K - 8 Schools in District 30 </h1>
     </div>
     <div class='sub-heading'>
-      <h2> Please click the name and address of a school to zoom in to its location on the district map. You may also
+      <h2> Please click the name of a school to zoom in to its location on the district map. You may also
         click on a map marker to see a photo of the school located there.</h2>
     </div>
     <div id='listings' class='listings'></div>
   </div>
   <div id="map" class="map"></div>
   </div>
-
+  <button id="popup-directions-btn" class="popup" role="button">Get Directions</button>
   <script>
 
     mapboxgl.accessToken = 'pk.eyJ1Ijoid2hpdHRvdXNzYWludCIsImEiOiJjbGc1cTkwZjcwM29uM2ZvZGVrN3o3dmpvIn0.vjFrPBBbMA0FjhY7VhNbZA';
@@ -103,6 +103,9 @@
     });
 
   </script>
+  <div id="legend"></div>
+  <div>
+  </div>
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"
