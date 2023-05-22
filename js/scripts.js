@@ -557,37 +557,19 @@ const schools = [
 // popup markers  
 schools.forEach(function (school) {
     // create the popup
-    const popup = new mapboxgl.Popup({ closeOnClick: true })
+    const popup = new mapboxgl.Popup({ closeOnMove: true })
         .setHTML(
             `
     <div>
         <div>${school['school-name']}</div>
         <img src="img/${school.image}"/>
-    </div>
+    </div><div>'<div class=popup-directions-btn>Get Directions</div>'
     `
 
         );
 
-    // figure out the color of the marker based on the program variable
-    if (schools.grades === '3K - PK') {
-        color = '#0fa8f5'
-    }
+    // figure out the color of the marker based on the grades served in the schools.
 
-    if (schools.grades === 'PK') {
-        color = '#1ed94a'
-    }
-
-    if (schools.grades === 'PK - 5') {
-        color = '#f5b00f'
-    }
-
-    if (schools.grades === 'K - 5') {
-        color = '#e356af'
-    }
-
-    if (schools.grades === '6 - 8') {
-        color = '#8751cf'
-    }
 
     // by default, use gray
 
@@ -599,9 +581,30 @@ schools.forEach(function (school) {
         .setPopup(popup)
         .addTo(map);
 
+    // let color = '#ccc'
+
+    // if (schools.grades === 'PK') {
+    //     color = '#0fa8f5'
+    // }
+
+    // if (pizzaRecord.program === 'Multi-Racial American') {
+    //     color = '#1ed94a'
+    // }
+
+    // if (pizzaRecord.program === 'Hispanic American') {
+    //     color = '#f5b00f'
+    // }
+
+    // if (pizzaRecord.program === 'CDFI') {
+    //     color = '#e356af'
+    // }
+
+    // if (pizzaRecord.program === 'African American') {
+    //     color = '#8751cf'
+    // }
+
 
 })
-
 
 map.on('load', function () {
     map.addSource('school-districts-nyc-simplified', {
@@ -667,7 +670,7 @@ for (const school of schools) {
         {
             if (this.id === `link-${school.id}`) {
                 flyToSchool(school);
-                // createPopup(marker);
+                
             }
         }
         const activeItem = document.getElementsByClassName('active');
@@ -698,13 +701,29 @@ map.once('moveend', function () {
     popup.addTo(map);
 });
 
- // Handle directions button click event
- $('#popup-directions-btn').on('click', function() {
-    var destination = (school.latitude + ',' + school.longitude);
+// Handle directions button click event
+$('#popup-directions-btn').on('click', function () {
+    var destination = [(school.latitude + ',' + school.longitude)];
     window.open('https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(destination), '_blank');
 });
 
 
+const legendItems = [
+    { name: '3K - PK', color: '#247ec3' },
+    { name: 'PS', color: '#3ea8cb' },
+    { name: 'IS', color: '#044170' },
+];
+
+legendItems.forEach(item => {
+    const legendItem = $('<div>').addClass('legend-item');
+    const legendColor = $('<div>').addClass('legend-color').css('background-color', item.color);
+    const legendText = $('<span>').text(item.name);
+    legendItem.append(legendColor).append(legendText);
+    $('#legend').append(legendItem);
+});
+
+const legendControl = new mapboxgl.Control({ element: $('#legend')[0] });
+map.addControl(legendControl);
 
 // createElement = new mapboxgl.Popup({ closeOnClick: false })
 //     .setLngLat([schools.longitude, schools.latitude])
