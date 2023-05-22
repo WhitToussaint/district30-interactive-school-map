@@ -455,7 +455,8 @@ const schools = [
         "telephone-number": "718-937-1463",
         "cec-liaison": "Whitney Toussaint",
         "city-council-district": "District 26",
-        "image": "is204.jpeg"
+        "image": "is204.jpeg",
+        "website": "https://owhschool.weebly.com"
     },
     {
         "school-name": "I.S. 227",
@@ -467,7 +468,8 @@ const schools = [
         "telephone-number": "718-335-7500",
         "cec-liaison": "Victoria Medelius",
         "city-council-district": "District 21",
-        "image": "is227.jpeg"
+        "image": "is227.jpeg",
+        "website": "https://www.armstrong227q.com"
     },
     {
         "school-name": "I.S.230",
@@ -479,7 +481,8 @@ const schools = [
         "telephone-number": "718-335-7648",
         "cec-liaison": "Victoria Medelius",
         "city-council-district": "District 25",
-        "image": "is230.jpeg"
+        "image": "is230.jpeg",
+        "website": "https://sites.google.com/is230.org/home"
     },
     {
         "school-name": "I.S. 235",
@@ -491,7 +494,8 @@ const schools = [
         "telephone-number": "718-956-4140",
         "cec-liaison": "Johnathan Greenberg",
         "city-council-district": "District 22",
-        "image": "is235.jpeg"
+        "image": "is235.jpeg",
+        "website": "https://www.is235.org"
     },
     {
         "school-name": "I.S. 291",
@@ -503,7 +507,8 @@ const schools = [
         "telephone-number": "718-609-3300",
         "cec-liaison": "Marisela Santos",
         "city-council-district": "District 26",
-        "image": "is291.jpeg"
+        "image": "is291.jpeg",
+        "website": "https://www.hunterspointcms.org"
     },
     {
         "school-name": "Pre-K Center at 78",
@@ -515,7 +520,8 @@ const schools = [
         "telephone-number": "718-472-6041",
         "cec-liaison": "N/A",
         "city-council-district": "District 26",
-        "image": "pkcenter78.jpeg"
+        "image": "pkcenter78.jpeg",
+        "website": "https://www.district30prekcenters.com/"
     },
     {
         "school-name": "D30 PK 972",
@@ -527,7 +533,8 @@ const schools = [
         "telephone-number": "718-391-4660",
         "cec-liaison": "N/A",
         "city-council-district": "District 26",
-        "image": "d30pk972.jpg"
+        "image": "d30pk972.jpg",
+        "website": "https://www.district30prekcenters.com/"
     },
     {
         "school-name": "D30 PK 389",
@@ -539,7 +546,8 @@ const schools = [
         "telephone-number": "718-533-5030",
         "cec-liaison": "N/A",
         "city-council-district": "District 21",
-        "image": "d30pk389.jpg"
+        "image": "d30pk389.jpg",
+        "website": "https://www.district30prekcenters.com/"
     },
     {
         "school-name": "D30 PK 397",
@@ -551,7 +559,8 @@ const schools = [
         "telephone-number": "718-316-9337",
         "cec-liaison": "N/A",
         "city-council-district": "District 22",
-        "image": "d30pk397.jpg"
+        "image": "d30pk397.jpg",
+        "website": "https://www.district30prekcenters.com/"
     }
 ]
 // popup markers  
@@ -583,7 +592,8 @@ schools.forEach(function (school) {
 
 
 
-})
+});
+
 
 map.on('load', function () {
     map.addSource('school-districts-nyc-simplified', {
@@ -649,7 +659,7 @@ for (const school of schools) {
         {
             if (this.id === `link-${school.id}`) {
                 flyToSchool(school);
-                
+
             }
         }
         const activeItem = document.getElementsByClassName('active');
@@ -681,16 +691,18 @@ map.once('moveend', function () {
 });
 
 // Handle directions button click event
-$('#popup-directions-btn').on('click', function () {
+$('.popup-directions-btn').on('click', function () {
     var destination = [(school.latitude + ',' + school.longitude)];
-    window.open('https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(destination), '_blank');
+    var directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(destination);
+    window.open(directionsUrl, '_blank');
+
 });
 
 
 const legendItems = [
-    { name: '3K - PK', color: '#247ec3' },
-    { name: 'PS', color: '#3ea8cb' },
-    { name: 'IS', color: '#044170' },
+    { name: '3K - PK', color: '#86ccef' },
+    { name: 'PS', color: '#44aa99' },
+    { name: 'IS', color: '#332288' },
 ];
 
 legendItems.forEach(item => {
