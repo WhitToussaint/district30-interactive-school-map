@@ -581,27 +581,6 @@ schools.forEach(function (school) {
         .setPopup(popup)
         .addTo(map);
 
-    // let color = '#ccc'
-
-    // if (schools.grades === 'PK') {
-    //     color = '#0fa8f5'
-    // }
-
-    // if (pizzaRecord.program === 'Multi-Racial American') {
-    //     color = '#1ed94a'
-    // }
-
-    // if (pizzaRecord.program === 'Hispanic American') {
-    //     color = '#f5b00f'
-    // }
-
-    // if (pizzaRecord.program === 'CDFI') {
-    //     color = '#e356af'
-    // }
-
-    // if (pizzaRecord.program === 'African American') {
-    //     color = '#8751cf'
-    // }
 
 
 })
