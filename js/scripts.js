@@ -657,7 +657,7 @@ schools.forEach(function (school) {
         } else if (grades === "2 - 8") {
             return "#332288"; // Blue color for MS
         } else {
-            return "#86ccef"; // Default color for unknown grades
+            return "#332288"; // Default color for unknown grades
         }
     }
 
