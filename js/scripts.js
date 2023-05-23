@@ -609,10 +609,10 @@ schools.forEach(function (school) {
     // <div>
     //     <div>${school['school-name']}</div>
     //     <img src="img/${school.image}"/>
-    // </div><div><div class=popup-directions-btn>Visit Website</div>'
+    // </div><div><a class="website-link" href="${current.website}" target="_blank">${current.website}</a> <i class="fa-solid fa-up-right-from-square"></i></div>
     // `
-
-    // );
+    //     )
+    //     .addTo(map); 
 
     // figure out the color of the marker based on the grades served in the schools.
 
@@ -622,44 +622,44 @@ schools.forEach(function (school) {
 
     // setting up the initial markers and popup content
 
-    new mapboxgl.Marker({ color:getMarkerColor(school.grades)})
+    new mapboxgl.Marker({ color: getMarkerColor(school.grades) })
         .setLngLat([school.longitude, school.latitude])
         .setPopup(popup)
         .addTo(map);
 
-// Define a function to get the marker color based on grades
-function getMarkerColor(grades) {
-    // Assign colors based on the grades property
-    if (grades === "PK") {
-        return "#86ccef"; // color for 3K - PK
-    } else if (grades === "3K - PK") {
-        return "#86ccef"; // color for PS
-    } else if (grades === "K - 4") {
-        return "#44aa99"; // color for PS
-    } else if (grades === "PK - 1") {
-        return "#44aa99"; // color for PS
-    } else if (grades === "3K - 4") {
-        return "#44aa99"; // color for PS
-    } else if (grades === "3K - 5") {
-        return "#44aa99"; // color for PS
-    } else if (grades === "K - 5") {
-        return "#44aa99"; // color for PS 
-    } else if (grades === "PK - 5") {
-        return "#44aa99"; // color for PS
-    } else if (grades === "PK - 6") {
-        return "#44aa99"; // color for PS
-    } else if (grades === "PK - 8") {
-        return "#44aa99"; // color for PS
-    } else if (grades === "6-8") {
-        return "#332288"; // Blue color for MS
-    } else if (grades === "5-8") {
-        return "#332288"; // Blue color for MS
-    } else if (grades === "2 - 8") {
-        return "#332288"; // Blue color for MS
-    } else {
-        return "#86ccef"; // Default color for unknown grades
+    // Define a function to get the marker color based on grades
+    function getMarkerColor(grades) {
+        // Assign colors based on the grades property
+        if (grades === "PK") {
+            return "#86ccef"; // color for 3K - PK
+        } else if (grades === "3K - PK") {
+            return "#86ccef"; // color for PS
+        } else if (grades === "K - 4") {
+            return "#44aa99"; // color for PS
+        } else if (grades === "PK - 1") {
+            return "#44aa99"; // color for PS
+        } else if (grades === "3K - 4") {
+            return "#44aa99"; // color for PS
+        } else if (grades === "3K - 5") {
+            return "#44aa99"; // color for PS
+        } else if (grades === "K - 5") {
+            return "#44aa99"; // color for PS 
+        } else if (grades === "PK - 5") {
+            return "#44aa99"; // color for PS
+        } else if (grades === "PK - 6") {
+            return "#44aa99"; // color for PS
+        } else if (grades === "PK - 8") {
+            return "#44aa99"; // color for PS
+        } else if (grades === "6-8") {
+            return "#332288"; // Blue color for MS
+        } else if (grades === "5-8") {
+            return "#332288"; // Blue color for MS
+        } else if (grades === "2 - 8") {
+            return "#332288"; // Blue color for MS
+        } else {
+            return "#86ccef"; // Default color for unknown grades
+        }
     }
-}
 
 
 
@@ -765,7 +765,7 @@ map.once('moveend', function () {
 
 const legendItems = [
     { name: '3K - PK Centers Only', color: '#86ccef' },
-    { name: 'PS', color: '#44aa99' },
+    { name: 'PS (includes some K-8)', color: '#44aa99' },
     { name: 'IS', color: '#332288' },
 ];
 
