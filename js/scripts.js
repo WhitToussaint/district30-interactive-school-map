@@ -11,7 +11,8 @@ const schools = [
         "telephone-number": "718-728-1459",
         "cec-liaison": "Fatima Lakrafli",
         "city-council-district": "District 22",
-        "image": "ps002.jpg"
+        "image": "ps002.jpg",
+        "website": "https://www.ps2q.org"
     },
     {
         "school-name": "P.S. 011",
@@ -23,7 +24,8 @@ const schools = [
         "telephone-number": "718-779-2090",
         "cec-liaison": "Esther Verhalle",
         "city-council-district": "District 26",
-        "image": "ps011.jpg"
+        "image": "ps011.jpg",
+        "website": "https://www.ps11q.org"
     },
     {
         "school-name": "P.S. 017",
@@ -35,7 +37,8 @@ const schools = [
         "telephone-number": "718-278-1220",
         "cec-liaison": "Marisela Santos",
         "city-council-district": "District 22",
-        "image": "ps017.jpg"
+        "image": "ps017.jpg",
+        "website": "https://www.ps17queens.com"
     },
     {
         "school-name": "P.S. 069",
@@ -47,7 +50,8 @@ const schools = [
         "telephone-number": "718-424-7700",
         "cec-liaison": "Deborah Alexander",
         "city-council-district": "District 25",
-        "image": "ps069.jpg"
+        "image": "ps069.jpg",
+        "website": "https://www.ps69q.com"
     },
     {
         "school-name": "P.S. 070",
@@ -59,7 +63,8 @@ const schools = [
         "telephone-number": "718-728-4646",
         "cec-liaison": "Kristina Berrouet",
         "city-council-district": "District 22",
-        "image": "ps070.jpeg"
+        "image": "ps070.jpeg",
+        "website": "https://ps070q.echalksites.com"
     },
     {
         "school-name": "P.S. 076",
@@ -71,7 +76,8 @@ const schools = [
         "telephone-number": "718-361-7464",
         "cec-liaison": "Esther Verhalle",
         "city-council-district": "District 26",
-        "image": "ps076.jpeg"
+        "image": "ps076.jpeg",
+        "website": "http://www.ps76q.org"
     },
     {
         "school-name": "P.S./I.S. 078 Middle School Building",
@@ -83,7 +89,8 @@ const schools = [
         "telephone-number": "718-392-5402",
         "cec-liaison": "Deborah Alexander",
         "city-council-district": "District 26",
-        "image": "psis78.jpeg"
+        "image": "psis78.jpeg",
+        "website": "https://www.ps78.com"
     },
     {
         "school-name": "P.S./I.S. 078 ECC Building",
@@ -95,7 +102,8 @@ const schools = [
         "telephone-number": "718-392-5402",
         "cec-liaison": "Deborah Alexander",
         "city-council-district": "District 26",
-        "image": "pkcenter78.jpeg"
+        "image": "pkcenter78.jpeg",
+        "website": "https://www.ps78.com"
     },
     {
         "school-name": "P.S. 084",
@@ -107,7 +115,8 @@ const schools = [
         "telephone-number": "718-278-1915",
         "cec-liaison": "Fatima Lakrafli",
         "city-council-district": "District 22",
-        "image": "ps084.jpeg"
+        "image": "ps084.jpeg",
+        "website": "https://www.ps84q.org"
     },
     {
         "school-name": "P.S. 085",
@@ -119,7 +128,8 @@ const schools = [
         "telephone-number": "718-278-3630",
         "cec-liaison": "Deborah Alexander",
         "city-council-district": "District 22",
-        "image": "ps085.jpeg"
+        "image": "ps085.jpeg",
+        "website": "https://www.ps85q.org"
     },
     {
         "school-name": "P.S. 092",
@@ -131,19 +141,21 @@ const schools = [
         "telephone-number": "718-533-1013",
         "cec-liaison": "Johnathan Greenberg",
         "city-council-district": "District 21",
-        "image": "ps092.jpeg"
+        "image": "ps092.jpeg",
+        "website": "https://www.ps92q.org"
     },
     {
         "school-name": "P.S./I.S. 111",
         "address": "37-15 13th Street, Long Island City, NY 11101",
         "longitude": -73.93893921,
         "latitude": 40.75863747,
-        "grades": "PK - 8 ",
+        "grades": "PK - 8",
         "principal": "Dionne Jaggon",
         "telephone-number": "718-786-2073",
         "cec-liaison": "Juliette-Noor Haji",
         "city-council-district": "District 26",
-        "image": "psis111.jpeg"
+        "image": "psis111.jpeg",
+        "website": "https://www.ps111q.org"
     },
     {
         "school-name": "P.S. 112",
@@ -155,19 +167,21 @@ const schools = [
         "telephone-number": "718-784-5250",
         "cec-liaison": "Kelly Craig",
         "city-council-district": "District 26",
-        "image": "ps112.jpeg"
+        "image": "ps112.jpeg",
+        "website": "https://www.ps112q.org"
     },
     {
         "school-name": "P.S./I.S. 122",
         "address": "21-21 Ditmars Boulevard, Astoria, NY 11105",
         "longitude": -73.9162258,
         "latitude": 40.78046605,
-        "grades": "PK - 8 ",
+        "grades": "PK - 8",
         "principal": "Anna Aprea",
         "telephone-number": "718-721-6410",
         "cec-liaison": "Victoria Medelius",
         "city-council-district": "District 22",
-        "image": "ps122.jpeg"
+        "image": "ps122.jpeg",
+        "website": "http://ps122q.org"
     },
     {
         "school-name": "P.S./I.S. 127",
@@ -179,55 +193,60 @@ const schools = [
         "telephone-number": "718-446-4700",
         "cec-liaison": "Fatima Lakrafli",
         "city-council-district": "District 21",
-        "image": "psis127.jpeg"
+        "image": "psis127.jpeg",
+        "website": "https://psis127q.edupage.org"
     },
     {
         "school-name": "P.S. 148",
         "address": "89-02 32nd Avenue, East Elmhurst, NY 11369",
         "longitude": -73.87875488264245,
         "latitude": 40.75816257946581,
-        "grades": "PK - 5 ",
+        "grades": "PK - 5",
         "principal": "Yolanda Harvey",
         "telephone-number": "718-898-8181",
         "cec-liaison": "Johnathan Greenberg",
         "city-council-district": "District 25",
-        "image": "ps148.jpeg"
+        "image": "ps148.jpeg",
+        "website": "https://www.ps148q.com"
     },
     {
         "school-name": "P.S. 149",
         "address": "93-11 34th Avenue, Jackson Heights, NY 11372",
         "longitude": -73.87433629,
         "latitude": 40.75524977,
-        "grades": "PK - 5 ",
+        "grades": "PK - 5",
         "principal": "Onalis Hernandez",
         "telephone-number": "718-898-3630",
         "cec-liaison": "Whitney Toussaint",
         "city-council-district": "District 25",
-        "image": "ps149.jpeg"
+        "image": "ps149.jpeg",
+        "website": "https://www.ps149q.org"
     },
     {
         "school-name": "P.S. 150",
         "address": "40-01 43rd Avenue, Long Island City, NY 11104",
         "longitude": -73.9234070117597,
         "latitude": 40.745788240278685,
-        "grades": "PK - 5 ",
+        "grades": "PK - 5",
         "principal": "Carmen Parache",
         "telephone-number": "718-784-2252",
         "cec-liaison": "Kelly Craig",
         "city-council-district": "District 26",
-        "image": "ps150.jpeg"
+        "image": "ps150.jpeg",
+        "website": "https://www.q150.org"
     },
     {
         "school-name": "P.S. 151",
         "address": "50-05 31st Avenue, Woodside, NY 11377",
         "longitude": -73.90830519,
         "latitude": 40.75761776,
-        "grades": "PK - 5 ",
+        "grades": "PK - 5",
         "principal": "Dr. Samantha Maisonet",
         "telephone-number": "718-728-2676",
         "cec-liaison": "Kelly Craig",
         "city-council-district": "District 22",
-        "image": "ps151.jpeg"
+        "image": "ps151.jpeg",
+        "website": "https://ps151q.com"
     },
     {
         "school-name": "P.S. 152",
@@ -239,7 +258,8 @@ const schools = [
         "telephone-number": "718-429-3141",
         "cec-liaison": "Kelly Craig",
         "city-council-district": "District 26",
-        "image": "ps152.jpeg"
+        "image": "ps152.jpeg",
+        "website": "https://sites.google.com/152q.org/the-courier/home"
     },
     {
         "school-name": "P.S. 166",
@@ -251,19 +271,21 @@ const schools = [
         "telephone-number": "718-786-6703",
         "cec-liaison": "Whitney Toussaint",
         "city-council-district": "District 26",
-        "image": "ps166.jpeg"
+        "image": "ps166.jpeg",
+        "website": "https://www.ps166q.com>"
     },
     {
         "school-name": "P.S. 171",
         "address": "14-14 29th Avenue, Astoria, NY 11102",
         "longitude": -73.92899747,
         "latitude": 40.77113105,
-        "grades": "PK - 5 ",
+        "grades": "PK - 5",
         "principal": "Laura Kavourias",
         "telephone-number": "718-932-0909",
         "cec-liaison": "Marisela Santos",
         "city-council-district": "District 22",
-        "image": "ps171.jpg"
+        "image": "ps171.jpg",
+        "website": "https://ps171q.wixsite.com/ps171q"
     },
     {
         "school-name": "P.S. 212",
@@ -275,7 +297,8 @@ const schools = [
         "telephone-number": "718-898-2563",
         "cec-liaison": "Victoria Medelius",
         "city-council-district": "District 25",
-        "image": "ps212.jpeg"
+        "image": "ps212.jpeg",
+        "website": "https://www.ps212q.com"
     },
     {
         "school-name": "P.S. 222",
@@ -287,7 +310,8 @@ const schools = [
         "telephone-number": "718-429-2563",
         "cec-liaison": "Kristina Berrouet",
         "city-council-district": "District 25",
-        "image": "ps222.jpeg"
+        "image": "ps222.jpeg",
+        "website": "https://youngexplorers222.org"
     },
     {
         "school-name": "P.S. 228",
@@ -299,7 +323,8 @@ const schools = [
         "telephone-number": "718-889-5799",
         "cec-liaison": "Kelly Craig",
         "city-council-district": "District 21",
-        "image": "ps228.jpeg"
+        "image": "ps228.jpeg",
+        "website": "https://ps228queens.wixsite.com/mysite-1"
     },
     {
         "school-name": "P.S. 234",
@@ -311,7 +336,8 @@ const schools = [
         "telephone-number": "718-956-2760",
         "cec-liaison": "Juliette-Noor Haji",
         "city-council-district": "District 22",
-        "image": "ps234.jpeg"
+        "image": "ps234.jpeg",
+        "website": "https://www.ps234queens.com"
     },
     {
         "school-name": "P.S. 280",
@@ -323,7 +349,8 @@ const schools = [
         "telephone-number": "718-424-9031",
         "cec-liaison": "Michelle Moore",
         "city-council-district": "District 25",
-        "image": "ps280.jpg"
+        "image": "ps280.jpg",
+        "website": "https://ps280q.org"
     },
     {
         "school-name": "P.S. 329",
@@ -335,7 +362,8 @@ const schools = [
         "telephone-number": "718-505-6050",
         "cec-liaison": "Michelle Moore",
         "city-council-district": "District 21",
-        "image": "ps329.jpg"
+        "image": "ps329.jpg",
+        "website": "https://ps329q.echalksites.com"
     },
     {
         "school-name": "P.S./I.S. 300 Lower Division",
@@ -347,7 +375,8 @@ const schools = [
         "telephone-number": "718-626-8502",
         "cec-liaison": "Fatima Lakrafli",
         "city-council-district": "District 22",
-        "image": "psis300lower.jpg"
+        "image": "psis300lower.jpg",
+        "website": "https://ps300q.org"
     },
     {
         "school-name": "P.S./I.S. 300 Upper Division",
@@ -359,7 +388,8 @@ const schools = [
         "telephone-number": "718-726-0501",
         "cec-liaison": "Fatima Lakrafli",
         "city-council-district": "District 22",
-        "image": "psis300upper.jpeg"
+        "image": "psis300upper.jpeg",
+        "website": "https://ps300q.org"
     },
     {
         "school-name": "P.S. 361",
@@ -371,7 +401,8 @@ const schools = [
         "telephone-number": "718-592-3300",
         "cec-liaison": "Whitney Toussaint/Kristina Berrouet",
         "city-council-district": "District 26",
-        "image": "ps361.jpeg"
+        "image": "ps361.jpeg",
+        "website": "https://www.ps361q.org"
     },
     {
         "school-name": "P.S. 384",
@@ -383,7 +414,8 @@ const schools = [
         "telephone-number": "718-391-4667",
         "cec-liaison": "Michelle Moore/Kelly Craig",
         "city-council-district": "District 26",
-        "image": "ps384.jpeg"
+        "image": "ps384.jpeg",
+        "website": "https://ps384q.org"
     },
     {
         "school-name": "P.S. 398",
@@ -395,7 +427,8 @@ const schools = [
         "telephone-number": "929-463-7200",
         "cec-liaison": "Esther Verhalle",
         "city-council-district": "District 25",
-        "image": "ps398.jpeg"
+        "image": "ps398.jpeg",
+        "website": "https://www.ps398queens.org"
     },
     {
         "school-name": "I.S. 010",
@@ -407,7 +440,8 @@ const schools = [
         "telephone-number": "718-278-7054",
         "cec-liaison": "Kristina Berrouet",
         "city-council-district": "District 22",
-        "image": "is010.jpeg"
+        "image": "is010.jpeg",
+        "website": "https://www.horacegreeleyis10q.org"
     },
     {
         "school-name": "I.S. 126",
@@ -419,7 +453,8 @@ const schools = [
         "telephone-number": "718-274-8316",
         "cec-liaison": "Marisela Santos",
         "city-council-district": "District 22",
-        "image": "is126.jpeg"
+        "image": "is126.jpeg",
+        "website": "https://www.is126q.com"
     },
     {
         "school-name": "I.S. 141",
@@ -431,7 +466,8 @@ const schools = [
         "telephone-number": "718-278-6403",
         "cec-liaison": "Michelle Moore",
         "city-council-district": "District 22",
-        "image": "is141.jpeg"
+        "image": "is141.jpeg",
+        "website": "https://www.is141.org"
     },
     {
         "school-name": "I.S. 145",
@@ -443,7 +479,8 @@ const schools = [
         "telephone-number": "718-457-1242",
         "cec-liaison": "Johnathan Greenberg",
         "city-council-district": "District 25",
-        "image": "is145.jpeg"
+        "image": "is145.jpeg",
+        "website": "https://www.145innovators.com"
     },
     {
         "school-name": "I.S. 204",
@@ -528,7 +565,7 @@ const schools = [
         "address": "27-35 Jackson Avenue, Long Island City, NY 11101",
         "longitude": -73.94028125,
         "latitude": 40.74835186,
-        "grades": "3K - PK ",
+        "grades": "3K - PK",
         "principal": "Dr. Suzan Goldstein",
         "telephone-number": "718-391-4660",
         "cec-liaison": "N/A",
@@ -541,7 +578,7 @@ const schools = [
         "address": "96-10 23rd Avenue, East Elmhurst, NY 11369",
         "longitude": -73.87385822,
         "latitude": 40.76831256,
-        "grades": "3K - PK ",
+        "grades": "3K - PK",
         "principal": "Dr. Suzan Goldstein",
         "telephone-number": "718-533-5030",
         "cec-liaison": "N/A",
@@ -567,15 +604,15 @@ const schools = [
 schools.forEach(function (school) {
     // create the popup
     const popup = new mapboxgl.Popup({ closeOnMove: true })
-        .setHTML(
-            `
-    <div>
-        <div>${school['school-name']}</div>
-        <img src="img/${school.image}"/>
-    </div><div>'<div class=popup-directions-btn>Get Directions</div>'
-    `
+    //     .setHTML(
+    //         `
+    // <div>
+    //     <div>${school['school-name']}</div>
+    //     <img src="img/${school.image}"/>
+    // </div><div><div class=popup-directions-btn>Visit Website</div>'
+    // `
 
-        );
+    // );
 
     // figure out the color of the marker based on the grades served in the schools.
 
@@ -585,10 +622,45 @@ schools.forEach(function (school) {
 
     // setting up the initial markers and popup content
 
-    new mapboxgl.Marker()
+    new mapboxgl.Marker({ color:getMarkerColor(school.grades)})
         .setLngLat([school.longitude, school.latitude])
         .setPopup(popup)
         .addTo(map);
+
+// Define a function to get the marker color based on grades
+function getMarkerColor(grades) {
+    // Assign colors based on the grades property
+    if (grades === "PK") {
+        return "#86ccef"; // color for 3K - PK
+    } else if (grades === "3K - PK") {
+        return "#86ccef"; // color for PS
+    } else if (grades === "K - 4") {
+        return "#44aa99"; // color for PS
+    } else if (grades === "PK - 1") {
+        return "#44aa99"; // color for PS
+    } else if (grades === "3K - 4") {
+        return "#44aa99"; // color for PS
+    } else if (grades === "3K - 5") {
+        return "#44aa99"; // color for PS
+    } else if (grades === "K - 5") {
+        return "#44aa99"; // color for PS 
+    } else if (grades === "PK - 5") {
+        return "#44aa99"; // color for PS
+    } else if (grades === "PK - 6") {
+        return "#44aa99"; // color for PS
+    } else if (grades === "PK - 8") {
+        return "#44aa99"; // color for PS
+    } else if (grades === "6-8") {
+        return "#332288"; // Blue color for MS
+    } else if (grades === "5-8") {
+        return "#332288"; // Blue color for MS
+    } else if (grades === "2 - 8") {
+        return "#332288"; // Blue color for MS
+    } else {
+        return "#86ccef"; // Default color for unknown grades
+    }
+}
+
 
 
 
@@ -678,11 +750,11 @@ function flyToSchool(current) {
     });
 
 
-    // Create a new popup
+    // Create a new popup with image and active website link.
     popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat([current.longitude, current.latitude])
-        .setHTML(`'<div>${current['school-name']}</div>
-            <div><img src="img/${current.image}"/></div><div>'<div class=popup-directions-btn>Get Directions</div>'`)
+        .setHTML(`<div>${current['school-name']}</div>
+            <div><img src="img/${current.image}"/></div><div><a class="website-link" href="${current.website}" target="_blank">${current.website}</a> <i class="fa-solid fa-up-right-from-square"></i></div>`)
         .addTo(map);
 }
 // Open the popup after the fly animation is completed
@@ -690,17 +762,9 @@ map.once('moveend', function () {
     popup.addTo(map);
 });
 
-// Handle directions button click event
-$('.popup-directions-btn').on('click', function () {
-    var destination = [(school.latitude + ',' + school.longitude)];
-    var directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(destination);
-    window.open(directionsUrl, '_blank');
-
-});
-
 
 const legendItems = [
-    { name: '3K - PK', color: '#86ccef' },
+    { name: '3K - PK Centers Only', color: '#86ccef' },
     { name: 'PS', color: '#44aa99' },
     { name: 'IS', color: '#332288' },
 ];
@@ -716,23 +780,4 @@ legendItems.forEach(item => {
 const legendControl = new mapboxgl.Control({ element: $('#legend')[0] });
 map.addControl(legendControl);
 
-// createElement = new mapboxgl.Popup({ closeOnClick: false })
-//     .setLngLat([schools.longitude, schools.latitude])
-//     .setHTML(`<div>${schools['school-name']}</div><div><img src="img/${schools.image}"/></div>`)
-//     .addTo(map);
 
-
-// const popup = new mapboxgl.Popup({ offset: 30 })
-//         .setHTML(
-//             `
-//             <div>
-//                 <div>${school['school-name']}</div>
-//                 <img src="img/${school.image}"/>
-//             </div>
-//             `
-
-//         );
-// const listing = new mapboxgl.Popup({ closeOnClick: false })
-//     .setLngLat([schools.longitude, schools.latitude])
-//     .setHTML(`<div>${schools['school-name']}</div><div><img src="img/${schools.image}"/></div>`)
-//     .addTo(map);

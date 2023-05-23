@@ -234,4 +234,14 @@ a:hover {
   color: rgba(0, 0, 0, .3);
 }
 
-;
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.website-link {
+  color: #044170;
+}
